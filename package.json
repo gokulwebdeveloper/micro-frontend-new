@@ -1,0 +1,25 @@
+{
+  "name": "microfrontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pricing": "cd micros/pricing && npm run start",
+    "sales": "cd micros/sales && npm run start",
+    "dashborad": "cd dashborad && npm run start",
+    "start": "concurrently \"npm run pricing\" \"npm run sales\" \"npm run dashborad\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gokulwebdeveloper/microfrontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gokulwebdeveloper/microfrontend/issues"
+  },
+  "homepage": "https://github.com/gokulwebdeveloper/microfrontend#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
